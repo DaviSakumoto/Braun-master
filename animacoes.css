@@ -1,0 +1,81 @@
+/* Menu */
+
+.overlay-kitchen{
+  background-image: url(imagens/en-navnod-braun-kitchen-1440x1280.webp);
+  background-position: 100% 10%;
+  background-size:60%;
+  background-repeat:no-repeat;
+  right:0px;
+}
+
+.overlay-ironing{
+  background-image: url(imagens/en-navnod-braun-iron-1440x1280.webp);
+  background-position: 100% 10%;
+  background-size:60%;
+  background-repeat:no-repeat;
+}
+
+.overlay-collections{
+  background-image: url(imagens/en-navnod-braun-collections-1440x1280.webp);
+  background-position: 100% 10%;
+  background-size:60%;
+  background-repeat:no-repeat;
+}
+
+.overlay-promotions{
+  background-image: url(imagens/en-navnod-braun-promotions-1440x1280.webp);
+  background-position: 100% 10%;
+  background-size:60%;
+  background-repeat:no-repeat;
+}
+
+
+.overlay-more{
+  background-image: url(imagens/en-navnod-braun-other-products-series-shavers-2021-2-1440x1280.webp);
+  background-position: 100% 10%;
+  background-size:60%;
+  background-repeat:no-repeat;
+}
+
+.overlay-versatility{
+  background-image: url(imagens/en-navnod-braun-versatility-1440x1280.webp);
+  background-position: 100% 10%;
+  background-size:60%;
+  background-repeat:no-repeat;
+}
+
+.overlay-garment{
+  background-image: url(imagens/en-navnod-braun-garment-care-1440x1280.webp);
+  background-position: 100% 10%;
+  background-size:60%;
+  background-repeat:no-repeat;
+}
+
+
+
+
+
+
+
+@keyframes showtest1{
+    
+  
+  from{right: -100px;}
+  to{right: 3px;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

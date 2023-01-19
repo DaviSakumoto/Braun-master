@@ -1,0 +1,1342 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --green: #70c13b;
+    --green2: #95cb3f;
+    --blue1: #5dc7ec;
+    --orange1: #f6b151;
+    --orange2: #f29662;
+    --orange3: #cd9a75;
+    --purple: #8d7fa6;
+    --cinza: #dfdedf;
+    --cinza2: #9fa0a1;
+    --black: #000;
+    --white: #fff;
+}
+
+
+html,
+body{
+    font-family: Helvetica,Arial,Helvetica,sans-serif;
+    background: #fff;
+    color: var(--black)
+
+   
+   
+}
+
+/* text */
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+.navbar-outer .navbar-inner img{
+    width: 80px;
+}
+
+.navbar-outer .navbar-inner i{
+    font-size: 20px;
+    color:#fff;
+    
+}
+
+/* teste */
+
+
+.navbar-inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 40px 35px 40px 30px ;
+  
+}
+
+.menu{
+    display: flex;
+
+}
+
+.navbar-inner .menu a{
+    margin-left: 20px;
+}
+
+.navbar-outer{
+    width: 100%;
+    height: 160px;
+    background: transparent;
+    z-index: 150;
+    position: fixed;
+    top: -20px; 
+    transition: all 400ms ease-in-out;
+    overflow: hidden;
+
+   
+
+}
+
+
+ .navbar-outer .navbar-inner{
+    position: sticky;
+
+}
+
+ .header{
+    background: url(imagens/en-Home-Stage-braun-CareStyle-7-Pro-Def-Introducing-the-most-powerful-ironing-system-M.webp)
+    no-repeat  top center/cover;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.find{
+    height: 200px;
+    padding: 80px 50px;
+   
+}
+
+.find-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.find-container-text{
+    font-size: 2.2em;
+    font-weight: 799;
+    margin-left: 110px;
+    width: 40%;
+}
+
+
+.find-container-slide{
+    height: 50px;
+    width: 100px;
+    border: 1px solid red;
+}
+
+
+.bgc {
+	background: #000;
+    height: 100px;
+    text-align: center;
+    justify-content: center; 
+
+}
+
+.card{
+    position: absolute;
+    background: rgba(0,0,0,.85);
+    height: 350px;
+    width: 570px;
+    top: 43%;
+    left: 40px;
+    border-radius: 5px;
+    animation: 0.5s papiro ease;
+}
+
+.card-body{
+    padding: 10px;
+    display: flex;
+}
+
+ .body-left{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        width: 60%;
+        height: auto;
+        padding: 20px;
+       
+       
+}
+
+ .pre-title{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.pre-title .tag{
+    padding: 5px 10px;
+    background: #007bc2;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 15px;
+
+}
+
+.pre-title .texto{
+    font-size: 17px;
+    color: #007bc2;
+    font-weight: bold; 
+}
+
+
+/* Animações */
+
+.tag,.texto{
+    animation: show .5s forwards;
+    animation-delay: 800ms;
+    opacity: 0%;
+    position: relative;
+}
+
+.title,.body-right img{
+    animation: show .9s forwards;
+    animation-delay: 850ms;
+    opacity: 0%;
+    position: relative;
+}
+
+.body-left .button{
+    animation: show 800ms forwards;
+    animation-delay: 1s;
+    opacity: 0%;
+    position: relative;
+}
+
+/* fim de animações */
+
+
+
+.card-body .title{
+    margin: 20px 0;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    width: 90%;
+}
+
+.body-left .btn{ 
+   
+    height: 40px;
+    width: 55%;
+    background: #007bc2;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ 
+}
+
+.body-left  .btn:hover{
+    color: #007bc2;
+    background-color: #fff;
+    transition: all ease-in 150ms;
+}
+
+.body-right{
+    padding: 15px;
+  
+   
+}
+
+
+.body-right img{
+    width: 180px;
+   justify-content: flex-end;
+    margin-top: 50px;
+
+}
+
+
+
+/* Animações */
+
+@keyframes papiro{
+    from{
+        width: 200px;
+    }
+    to{
+        width: 570px;
+    }
+}
+
+
+@keyframes show{
+    
+    from{
+        left: -25px;
+    }
+    to{
+        left: 4px;
+        opacity: 100%;
+        
+    }
+}
+
+
+
+/* Hamburguer menu */
+
+
+.hamburguer{
+    display: flex;
+    flex-direction: column;
+    gap: 5.4px;
+    width: 20px;
+    padding-bottom: 10px;
+}
+
+.stroke{
+    width: 20px;
+    background: #fff;
+    height: 0.15rem;
+}
+
+.stroke, .stroke-lower{
+   border-radius: 2px;
+}
+
+.stroke-lower{
+    width: 10px;
+    background: #fff;
+    height: 0.15rem;
+    transition: width .3s ease-in-out  ;
+}
+
+.hamburguer:hover > .stroke-lower{
+    width: 20px;  
+}
+
+
+/* Modal */
+
+.modal{
+    display: none; 
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-box{
+    margin: 2% auto;
+    width: 97%;
+    height: 93vh;
+    background: #fff;
+    color: #000;
+    position: relative;
+    animation: modalopen 1s;
+}
+
+
+@keyframes modalopen{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+
+.modal-body{
+    padding: 15px;
+}
+
+.modal-body #close{
+    width: 15px;
+}
+
+.modal-body .topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.modal-body .search{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 60px auto;
+}
+
+.modal-body .search h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.modal-body .search input{
+    padding: 10px ;
+    border: none;
+    width: 80%;
+    margin-bottom: 30px;
+    border: 0.5px solid #ccc;
+
+}
+
+.search p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgb(107, 104, 104);
+    font-weight: bold;
+}
+
+.search a{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+    width: 150px;
+}
+
+.procura input:focus{
+   outline: none;
+}
+
+
+
+.procura input:focus ~ i  {
+    color: green;
+}
+
+
+.procura i{
+    
+    z-index: 100px;
+    position: absolute;
+    right: 485px;
+    margin-top: 10px;
+    font-size: 20px;
+     transition: ease-in-out 300ms; 
+}
+
+.overlay{
+    height: 0%;
+    width: 100%; 
+    position: fixed;
+    z-index: 1000; 
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transition: 0.3s;
+    overflow-y: scroll; 
+    padding-left: 30px;
+}
+
+.overlay-nav{
+    padding: 10px  0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    background-color: transparent;
+    padding-right: 10px;
+    position: sticky;
+    top: -7px;
+
+
+}
+
+.overlay-nav img{
+    width: 90px;
+}
+
+.overlay-nav .pocket{
+    font-size: 20px;
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.overlay-nav .pocket a{
+    color: var(--black);
+}
+
+.overlay-content{
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+    height: 100%;
+    width: 40%;
+}
+
+.overlay-content ul{
+    list-style-type: none;
+}
+
+.overlay-content-discover, .overlay-content-inspired{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.overlay-content-discover p, .overlay-content-inspired p{
+    color: var(--green);
+}
+
+.overlay-content-discover ul li, .overlay-content-inspired ul li{
+   margin-top: 15px;
+   font-size: 1.9em;
+}
+
+
+
+ .overlay-content ul:hover li{
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+ }
+
+ .overlay-content ul:hover li:hover{
+    opacity: 1 ;
+    transition: 0.3s ease-in-out;
+    
+ }
+
+
+
+.overlay-content-discover ul li a, .overlay-content-inspired ul li a{
+  color: var(--black);
+  font-weight: bolder;
+}
+
+.overylay-content-support{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    margin-top: 50px;
+}
+
+.overylay-content-support #support{
+    transition: .7s ease;
+    color: var(--black)
+}
+
+.overylay-content-support #support:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.overylay-content-support-socials{
+ 
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.overylay-content-support-socials > div{
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    line-height: 30px;
+    transition: .3s ease;
+}
+
+.overylay-content-support-socials > div:hover{
+    background-color: var(--green);
+}
+
+
+.teste{
+    height: 500px;
+}
+
+/* Slide Cards */
+
+.slide-card-wrapper{
+   
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   
+}
+
+
+.slide-content{
+    width: 100%;
+    margin: 30px 0px;
+    padding: 0 50px;
+
+    overflow:hidden;
+   
+}
+
+
+
+.slide-card{
+    border-radius: 5px;
+    height: 450px;
+    width: 450px;
+    position: relative;
+  
+
+}
+
+.slide-card-text{
+
+    position:absolute;
+    height: 100%;
+    width: 100%;
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+    
+
+  
+   
+}
+
+.slide-card-text-title{
+
+    font-size: 1.5em;
+    font-weight: bold;
+    
+
+}
+
+.slide-card-text-paragraph{
+    font-size: 15px;
+}
+
+
+.slide-card-visual img{
+   
+  
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: translate(0px, 9.1px);
+ 
+  
+}
+
+.slide-card-default{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.slide-card-hover{
+    display: none;
+
+}
+
+
+
+
+.chevron{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 50px;
+    background-color: var(--black);
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+
+    right: 20px;
+    bottom: 20px;
+    
+}
+
+.chevron i{
+    color: var(--white);
+}
+
+
+.slide-card{
+    background-color: var(--white);
+    transition: all .5s ease-in-out;
+}
+
+.slide-card:hover{
+    background-color: var(--green2);
+}
+
+
+.slide-card:hover .slide-card-visual{
+    
+    transform: translate(0px, -10px);
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide-card:hover .slide-card-default{
+    display: none;
+}
+
+.slide-card:hover .slide-card-hover{
+    display: block;
+}
+
+
+.slide-card:hover .chevron {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.slide-card:hover .chevron i{
+    color: var(--black);
+}
+
+#jug:hover, #citrus:hover, #purshine:hover, #breakfast:hover{
+    background-color: var(--orange1);
+}
+
+
+#fprocessor:hover{
+    background-color: var(--cinza);
+}
+
+#spin:hover{
+    background-color: var(--orange2);
+}
+
+#coffee:hover{
+    background-color: #cd9a75;
+}
+
+#kettles:hover, #toasters:hover{
+    background-color: var(--orange1)
+}
+
+#irons:hover{
+    background-color: var(--blue1);
+}
+
+#steamgen:hover{
+    background-color: var(--purple);
+}
+
+#identity:hover{
+    background-color: var(--green2)
+}
+
+#idbreak:hover{
+    background-color: var(--orange1);
+}
+
+.slide-container{
+    max-width: 1700px;
+     width: 100%; 
+
+    background-color: var(--white);
+    padding: 40px 0px;
+    
+}
+
+/* box-grid */
+
+.box-grid{
+    margin: 100px 40px;
+   
+}
+
+.template-box-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    
+}
+
+.bxshape{
+   border-radius: 5px;
+   height: 580px;
+   width: 580px;
+   position: relative;
+}
+
+.txtgen{
+    
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.txtgen-pre{
+   
+    z-index: 1;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.txtgen-para{
+    z-index: 1;
+    margin-bottom: 40px;
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.txtgen-button{
+
+    position: absolute;
+    
+    height: 40px;
+    width: 30%;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    
+}
+
+.txtgen-button a{
+
+   
+    color: var(--black);
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.txtgen-button:hover{
+    background-color: var(--green2)
+}
+
+#box1{
+    background-image: url(imagens/en-cp-prot-card-CareStyle-7-Pro-ergonomics-certified-iron-disclaimer-04-eng-1360x1296.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    
+}
+
+#box2{
+    background-image: url(imagens/en-home-prot-card-PurShine-Brighten-up-your-morning-1080x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+
+#box3{
+    background-image: url(imagens/en-home-prot-card-powerblend-9-JB9040-costumizable-textures-green-smoothie-1020x1020.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+
+#box4{
+    background-image: url(imagens/en-home-prot-card-texstyle-9-brauns-fastest-steam-iron-2-1080x1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+
+
+.gradiente{
+
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+
+   
+
+    background: linear-gradient(
+        156.82deg,
+        rgba(56, 52, 52, 0.6) 2.58%,
+        rgba(44, 43, 43, 0) 69.61%
+      ),
+      linear-gradient(24.5deg, rgba(225, 224, 224, 0.2) 4.71%, rgba(222, 220, 220, 0) 71.49%, transparent 20%);
+
+
+}
+
+/* articles */
+
+
+.articles{
+   
+    margin: 0px 40px;
+    height: 500px;
+    margin-bottom: 50px;
+   
+
+    
+}
+
+.articles-text{
+    padding: 40px 0px 60px 100px;
+    border-bottom: 1px solid var(--cinza);
+}
+
+.articles-text p{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.article{
+    margin-top: 40px;
+    height: 300px;
+    width: 50%;
+    border-bottom: 1px solid var(--cinza);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.article-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.article-pre{
+    font-weight: 100px;
+}
+
+.article-title{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.article-title a{
+  color: var(--black);
+}
+
+.article-left{
+    padding: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.chevron-art{
+
+
+    height: 40px;
+    width: 40px;
+    background-color: var(--black);
+    border-radius:  50px;
+
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    
+}
+
+.chevron-art i{
+    color: var(--white);
+    
+}
+
+
+
+  .chevron-art:hover {
+    background-color:  var(--white) ;
+    
+}
+
+
+
+
+
+.article-right-img{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.article-right-img{
+    background-image: url(imagens/en-home-artLink-card-garment-care-master-organisation-def-1080x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.article:hover  .chevron-art{
+    background-color: var(--white);
+}
+
+.article:hover  .chevron-art i{
+   color: var(--black);
+}
+
+
+/* support */
+
+.support{
+    margin: 70px 50px;
+}
+
+.support-body{
+    height: 300px;
+    width: 100%;
+    background-color: var(--black);
+    padding: 70px 10px ;
+}
+
+.support-text{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 20px;
+}
+
+.support-para{
+    color: var(--white);
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+
+.sup-btn{
+   
+    padding: 10px 30px;
+    background-color: var(--white);
+    border-radius: 50px;
+
+    text-align: center;
+    line-height: 40px ;
+    transition: all .3s ease;
+}
+
+.sup-btn:hover{
+    background-color: var(--green);
+}
+
+.support-button a {
+    color: var(--black);
+    font-weight: bold;
+
+}
+
+/* footer logo */
+
+
+.footer-logo{
+    margin: 20px 50px;
+}
+
+.footer-logo-img{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    border-bottom: 1px solid var(--cinza);
+}
+
+.footer-logo-img img{
+    width: 220px;
+    margin-top: 50px;
+}
+
+
+.footer-menu{
+    
+    margin: 50px 50px;
+    border-bottom: 1px solid var(--cinza);
+
+
+}
+
+.footer-menu-body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 350px;
+}
+
+.footer-menu-body ul .title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-menu-body ul .opt{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer-menu-body ul .opt a{
+    color: var(--cinza2);
+}
+
+.footer-menu-body ul .opt a:hover{
+    color: var(--green)
+}
+
+/* footer socials */
+
+.footer-socials{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px; /* deleter */
+
+}
+
+
+.b-form{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--black);
+}
+
+
+.footer-socials-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cinza);
+    padding-bottom: 30px;
+}
+
+.footer-socials-socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials-social{
+    margin-right: 20px;
+    transition: all .3s ease;
+}
+
+
+.social-int{
+   color: var(--white);
+   text-transform: uppercase;
+   text-align: center;
+   line-height: 40px;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+.footer-socials-int{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footer-socials-int a{
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--cinza2)
+}
+
+.footer-socials-int a:hover{
+    color: var(--black);
+}
+
+.footer-socials-int a:hover  .footer-socials-int .b-form{
+    background-color: var(--white);
+}
+
+.footer-socials-socials{
+    text-align: center;
+    line-height: 40px;
+}
+
+.socials-social:hover i{
+    color: var(--black);
+}
+
+.socials-social:hover{
+    background-color: var(--white);
+}
+
+.footer-socials-socials i{
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* Footer legal */
+
+.footer-legal{
+    margin: 20px;
+}
+
+.footer-legal-body{
+    
+}
+
+
+
+/* Media Queries */
+
+@media(max-width:768px){
+
+    .navbar-outer .navbar-inner img{
+        width: 60px;
+       
+    }
+
+    .navbar-outer{
+        height: 85px;
+    }
+
+  
+   
+
+    .header{
+        background: url(imagens/en-Home-Stage-braun-CareStyle-7-Pro-Def-Introducing-the-most-powerful-ironing-system-xs-v2.webp)
+        no-repeat top center/cover;
+    
+        height: 650px;
+    }
+
+    .bgc {
+        background: #000;
+        height: 10;
+        text-align: center;
+        justify-content: center; 
+    
+    }
+
+    .card{
+        position: absolute;
+        background: #000;
+        top: 70%;
+        height: 200px;
+        width: 90%;
+        margin: 0 auto;
+        left: 5%;
+    }
+
+    .card-body{
+        padding: 5px;
+    }
+
+    .pre-title .tag{
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+    .pre-title .texto{
+        font-size: 12px;
+    }
+
+    .card-body .title{
+        margin: 20px 0;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1.2;
+        width: 100%;
+    }
+
+    .body-right img{
+        width: 90px;
+    }
+
+    .body-right{
+    
+        height: 50%;
+        right: 5px;
+        position: absolute;
+    }
+    
+    .body-left{
+        height: 190px;
+        width: 75%;
+        
+    }
+
+    
+.body-left .btn{ 
+   
+    height: 30px;
+    width: 40%;
+    font-size: 12px;
+    margin-top: 25px;
+
+   }
+
+  
+
+
+   .overlay-nav img{
+    width: 65px;
+    }
+
+    .overlay-content{
+    gap:10px;
+    }
+
+    .overlay-content-discover ul li, .overlay-content-inspired ul li{
+      
+        font-size: 1em;
+    }
+
+    .overylay-content-support{
+        width: 100%;
+        width: 400px;
+    }
+
+
+    .find-container-text{
+       
+        flex-direction: row;
+        width: 100%;
+        margin: 40px auto;
+        font-size: 1.3em;
+    }
+
+    .box-grid{
+        margin: 140px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .template-box-body{
+        
+        grid-template-columns: 1fr;
+    }
+
+    .bxshape{
+        border-radius: 10px;
+        height: 450px;
+        width: 450px;
+        position: relative;
+     }
+
+
+}
+
+
+
+
