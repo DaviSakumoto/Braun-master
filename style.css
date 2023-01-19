@@ -1190,8 +1190,41 @@ ul{
     margin: 20px;
 }
 
-.footer-legal-body{
+.legal-text{
+
+   
+    font-size: 12px;
+    width: 100%;
+    margin: auto;
+    font-weight: bold;
+}
+
+.legal-links ul{
     
+    margin-top: 20px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.legal-links ul li{
+    margin-right: 20px;
+}
+
+.legal-links ul li a{
+    color: var(--cinza2);
+}
+
+.legal-links ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+.footer-legal-body{
+   width: 60%;
+   margin: auto;
+   margin-bottom: 70px;
 }
 
 
